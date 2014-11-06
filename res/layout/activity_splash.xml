@@ -1,0 +1,28 @@
+<LinearLayout android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:orientation="vertical">
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+	    android:name="com.google.android.gms.maps.MapFragment"
+    	  android:id="@+id/map"  android:layout_width="fill_parent"
+          android:layout_height="fill_parent"  
+          android:layout_weight="0.7"
+          android:layout_centerInParent="true"
+          map:mapType="normal"   map:uiCompass="true"
+  		  map:cameraZoom="12"   map:uiRotateGestures="true"
+		  map:uiScrollGestures="true"   map:uiTiltGestures="true"
+		  map:uiZoomControls="true"  map:uiZoomGestures="true">
+   </fragment>
+   
+   <Button
+       android:layout_weight="0.3"
+       android:id="@+id/gotobar"
+       android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:text="Go to a bar!"
+	   android:textColor="#FF4444"
+	   android:onClick="go"
+	   android:background="#FFFFFF">       
+       
+   </Button>
+
+</LinearLayout>
