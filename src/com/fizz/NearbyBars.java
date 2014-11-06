@@ -34,7 +34,7 @@ public class NearbyBars extends AsyncTask<LatLng, Void, PlacePOI[]> {
 	// Makes the request to the server
 //	@SuppressWarnings("deprecation")
 	private void makeRequest(LatLng pos) {
-		String query = "key=AIzaSyAN4a5lQurNgh1Kppwq4v_vfdUUMgzTcQ4"
+		String query = "key=REDACTED"
 						+ "&location=" + pos.latitude+","+pos.longitude + "&radius=" + 5000
 						+ "&sensor=true" + "&types=bar";
 		URL url = null;
